@@ -1,19 +1,11 @@
-document.getElementById("button").addEventListener("click", doStuff)
-/*
-This is a JavaScript (JS) file.
-JavaScript is the programming language that powers the web.
-
-To use this file, place the following <script> tag just before the closing </body> tag in your HTML file, making sure that the filename after "src" matches the name of your file...
-
-    <script src="script.js"></script>
-
-Learn more about JavaScript at https://developer.mozilla.org/en-US/Learn/JavaScript
-
-When you're done, you can delete all of this grey text, it's just a comment.
-*/
+var newButton = document.getElementById("button")
+newButton.addEventListener("click", doStuff)
 
 function doStuff() {
-  document.getElementById("text").innerHTML = "hello"
+  var paragraph = document.getElementById("text")
+  paragraph.textContent = "hello"
+  var sound = new Audio("that_was_easy.mp3")
+  sound.play()
   
 }
 
